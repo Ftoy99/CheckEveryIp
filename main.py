@@ -48,7 +48,7 @@ class HostChecker:
 
 
 def main():
-    a = HostChecker("82.102.57.157")
+    a = HostChecker("8.8.8.8")
     while a.increment():
         asyncio.run(a.checkHostname())
         print(a.toString())
